@@ -1,0 +1,15 @@
+services:
+    lowtech_news.admin.news:
+        class: Lowtech\NewsBundle\Admin\NewsAdmin
+        arguments: [~, Lowtech\NewsBundle\Entity\News, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: News}
+        calls:
+            #- [ setTranslationDomain, [AcmeStoreBundle]]
+            - [ setLabelTranslatorStrategy, [ @sonata.admin.label.strategy.underscore ] ]
+              #- [ setLabelTranslatorStrategy, [ @sonata.admin.label.strategy.native ]]
+    lowtech_news.admin.news_type:
+        class: Lowtech\NewsBundle\Admin\NewsTypeAdmin
+        arguments: [~, Lowtech\NewsBundle\Entity\NewsType, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: NewsType}
