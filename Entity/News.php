@@ -66,13 +66,6 @@ class News
     private $start_at;
 
     /**
-     * @var boolean
-     *
-     * @ORM\Column(name="enabled", type="boolean", nullable=true)
-     */
-    private $enabled = false;
-
-    /**
      * @var \DateTime
      *
      * @ORM\Column(name="end_at", type="datetime", nullable=true)
@@ -92,6 +85,13 @@ class News
      * @ORM\Column(name="updated_at", type="datetime")
      */
     private $updated_at;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="enabled", type="boolean", nullable=true)
+     */
+    private $enabled = false;
 
     /**
      * Get id
