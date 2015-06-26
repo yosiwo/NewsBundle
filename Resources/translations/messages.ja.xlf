@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="form.label_news_type_id">
+                <source>form.label_news_type_id</source>
+                <target>種別</target>
+            </trans-unit>
+            <trans-unit id="form.label_name">
+                <source>form.label_name</source>
+                <target>名前</target>
+            </trans-unit>
+            <trans-unit id="form.label_file">
+                <source>form.label_file</source>
+                <target>画像</target>
+            </trans-unit>
+            <trans-unit id="form.description">
+                <source>form.label_description</source>
+                <target>詳細</target>
+            </trans-unit>
+            <trans-unit id="form.start_at">
+                <source>form.label_start_at</source>
+                <target>表示開始日時</target>
+            </trans-unit>
+            <trans-unit id="form.end_at">
+                <source>form.label_end_at</source>
+                <target>表示終了日時</target>
+            </trans-unit>
+            <trans-unit id="form.enabled">
+                <source>form.label_enabled</source>
+                <target>有効</target>
+            </trans-unit>
+            <trans-unit id="list.label_id">
+                <source>list.label_id</source>
+                <target>ID</target>
+            </trans-unit>
+            <trans-unit id="list.label_news_type_id">
+                <source>list.label_news_type_id</source>
+                <target>種別</target>
+            </trans-unit>
+            <trans-unit id="list.label_name">
+                <source>list.label_name</source>
+                <target>名前</target>
+            </trans-unit>
+            <trans-unit id="list.label_image">
+                <source>list.label_image</source>
+                <target>画像</target>
+            </trans-unit>
+            <trans-unit id="list.label_file">
+                <source>list.label_file</source>
+                <target>画像</target>
+            </trans-unit>
+            <trans-unit id="list.description">
+                <source>list.label_description</source>
+                <target>詳細</target>
+            </trans-unit>
+            <trans-unit id="list.start_at">
+                <source>list.label_start_at</source>
+                <target>表示開始日時</target>
+            </trans-unit>
+            <trans-unit id="list.end_at">
+                <source>list.label_end_at</source>
+                <target>表示終了日時</target>
+            </trans-unit>
+            <trans-unit id="list.enabled">
+                <source>list.label_enabled</source>
+                <target>有効</target>
+            </trans-unit>
+            <trans-unit id="list.label__action">
+                <source>list.label__action</source>
+                <target>操作</target>
+            </trans-unit>
+            <trans-unit id="show.label_id">
+                <source>show.label_id</source>
+                <target>ID</target>
+            </trans-unit>
+            <trans-unit id="show.label_news_type_id">
+                <source>show.label_news_type_id</source>
+                <target>種別</target>
+            </trans-unit>
+            <trans-unit id="show.label_name">
+                <source>show.label_name</source>
+                <target>名前</target>
+            </trans-unit>
+            <trans-unit id="show.label_image">
+                <source>show.label_image</source>
+                <target>画像</target>
+            </trans-unit>
+            <trans-unit id="show.label_file">
+                <source>show.label_file</source>
+                <target>画像</target>
+            </trans-unit>
+            <trans-unit id="show.description">
+                <source>show.label_description</source>
+                <target>詳細</target>
+            </trans-unit>
+            <trans-unit id="show.start_at">
+                <source>show.label_start_at</source>
+                <target>表示開始日時</target>
+            </trans-unit>
+            <trans-unit id="show.end_at">
+                <source>show.label_end_at</source>
+                <target>表示終了日時</target>
+            </trans-unit>
+            <trans-unit id="show.enabled">
+                <source>show.label_enabled</source>
+                <target>有効</target>
+            </trans-unit>
+            <trans-unit id="filter.label_id">
+                <source>filter.label_id</source>
+                <target>ID</target>
+            </trans-unit>
+            <trans-unit id="filter.label_news_type_id">
+                <source>filter.label_news_type_id</source>
+                <target>種別</target>
+            </trans-unit>
+            <trans-unit id="filter.label_name">
+                <source>filter.label_name</source>
+                <target>名前</target>
+            </trans-unit>
+            <trans-unit id="filter.label_image">
+                <source>filter.label_image</source>
+                <target>画像</target>
+            </trans-unit>
+            <trans-unit id="filter.label_file">
+                <source>filter.label_file</source>
+                <target>画像</target>
+            </trans-unit>
+            <trans-unit id="filter.description">
+                <source>filter.label_description</source>
+                <target>詳細</target>
+            </trans-unit>
+            <trans-unit id="filter.start_at">
+                <source>filter.label_start_at</source>
+                <target>表示開始日時</target>
+            </trans-unit>
+            <trans-unit id="filter.end_at">
+                <source>filter.label_end_at</source>
+                <target>表示終了日時</target>
+            </trans-unit>
+            <trans-unit id="filter.enabled">
+                <source>filter.label_enabled</source>
+                <target>有効</target>
+            </trans-unit>
+            <trans-unit id="label_type_yes">
+                <source>label_type_yes</source>
+                <target>はい</target>
+            </trans-unit>
+            <trans-unit id="label_type_no">
+                <source>label_type_no</source>
+                <target>いいえ</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
