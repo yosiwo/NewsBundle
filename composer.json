@@ -1,0 +1,30 @@
+{
+    "name" : "lowtech/newsbundle",
+    "description" : "A news bundle",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Yoshitomo Fujii",
+        "email" : "fujii@lowtech.co.jp"
+    }],
+    "keywords" : [
+        "news bundle"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Lowtech\\NewsBundle" : ""
+        }
+    },
+    "target-dir" : "Lowtech/NewsBundle",
+    "repositories" : [{
+    }],
+    "extra" : {
+    "branch-alias" : {
+            "dev-master" : "0.0.1-dev"
+        }
+    }
+}
