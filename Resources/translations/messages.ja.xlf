@@ -26,6 +26,10 @@
                 <source>form.label_end_at</source>
                 <target>表示終了日時</target>
             </trans-unit>
+            <trans-unit id="form.recommended">
+                <source>form.label_recommended</source>
+                <target>おすすめ</target>
+            </trans-unit>
             <trans-unit id="form.enabled">
                 <source>form.label_enabled</source>
                 <target>有効</target>
@@ -61,6 +65,10 @@
             <trans-unit id="list.end_at">
                 <source>list.label_end_at</source>
                 <target>表示終了日時</target>
+            </trans-unit>
+            <trans-unit id="list.recommended">
+                <source>list.label_recommended</source>
+                <target>おすすめ</target>
             </trans-unit>
             <trans-unit id="list.enabled">
                 <source>list.label_enabled</source>
@@ -102,6 +110,10 @@
                 <source>show.label_end_at</source>
                 <target>表示終了日時</target>
             </trans-unit>
+            <trans-unit id="show.recommended">
+                <source>show.label_recommended</source>
+                <target>おすすめ</target>
+            </trans-unit>
             <trans-unit id="show.enabled">
                 <source>show.label_enabled</source>
                 <target>有効</target>
@@ -137,6 +149,10 @@
             <trans-unit id="filter.end_at">
                 <source>filter.label_end_at</source>
                 <target>表示終了日時</target>
+            </trans-unit>
+            <trans-unit id="filter.recommended">
+                <source>filter.label_recommended</source>
+                <target>おすすめ</target>
             </trans-unit>
             <trans-unit id="filter.enabled">
                 <source>filter.label_enabled</source>

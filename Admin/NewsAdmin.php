@@ -20,6 +20,7 @@ class NewsAdmin extends Admin
             ->add('name')
             ->add('image')
             ->add('description')
+            ->add('recommended')
             ->add('enabled')
         ;
     }
@@ -37,6 +38,7 @@ class NewsAdmin extends Admin
             ))
 
             ->add('description')
+            ->add('recommended')
             ->add('enabled')
             ->add('_action', 'actions', array(
                 'actions' => array(
@@ -72,6 +74,7 @@ class NewsAdmin extends Admin
             ->add('description')
             ->add('start_at', 'sonata_type_datetime_picker', array('required' => false))
             ->add('end_at', 'sonata_type_datetime_picker', array('required' => false))
+            ->add('recommended')
             ->add('enabled')
         ;
     }
@@ -85,6 +88,7 @@ class NewsAdmin extends Admin
             ->add('id')
             ->add('name')
             ->add('file')
+            ->add('recommended')
             ->add('description')
             ->add('enabled')
         ;

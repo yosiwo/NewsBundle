@@ -89,6 +89,13 @@ class News
     /**
      * @var boolean
      *
+     * @ORM\Column(name="recommended", type="boolean", nullable=true)
+     */
+    private $recommended = false;
+
+    /**
+     * @var boolean
+     *
      * @ORM\Column(name="enabled", type="boolean", nullable=true)
      */
     private $enabled = false;
@@ -402,5 +409,29 @@ class News
     public function getEnabled()
     {
         return $this->enabled;
+    }
+
+    /**
+     * Set recommended
+     *
+     * @param boolean $recommended
+     *
+     * @return News
+     */
+    public function setRecommended($recommended)
+    {
+        $this->recommended = $recommended;
+
+        return $this;
+    }
+
+    /**
+     * Get recommended
+     *
+     * @return boolean
+     */
+    public function getRecommended()
+    {
+        return $this->recommended;
     }
 }
