@@ -32,7 +32,7 @@ class NewsType
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -55,7 +55,7 @@ class NewsType
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -64,7 +64,7 @@ class NewsType
 
     public function __toString()
     {
-        return $this->getName();
+        return (string)$this->getName();
     }
 
 
