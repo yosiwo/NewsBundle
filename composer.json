@@ -13,6 +13,7 @@
         "MIT"
     ],
     "require" : {
+        "ext-intl": "*"
     },
     "autoload" : {
         "psr-0" : {
