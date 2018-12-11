@@ -33,6 +33,7 @@ class NewsAdmin extends Admin
         $listMapper
             ->add('id')
             ->add('name')
+            ->add('news_type_id')
             ->add('image', 'string', array(
                 'template' => 'LowtechNewsBundle::sonata_news_list_image.html.twig',
             ))
