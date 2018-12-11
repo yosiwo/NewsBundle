@@ -38,6 +38,8 @@ class NewsAdmin extends Admin
             ))
 
             ->add('description')
+            ->add('start_at')
+            ->add('end_at')
             ->add('recommended')
             ->add('enabled')
             ->add('_action', 'actions', array(
