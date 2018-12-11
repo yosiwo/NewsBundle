@@ -74,8 +74,8 @@ class NewsAdmin extends Admin
             ->add('name')
             ->add('file', 'file', $fileFieldOptions)
             ->add('description')
-            ->add('start_at', 'sonata_type_datetime_picker', array('required' => false))
-            ->add('end_at', 'sonata_type_datetime_picker', array('required' => false))
+            ->add('start_at', null, array('required' => false))
+            ->add('end_at', null, array('required' => false))
             ->add('recommended')
             ->add('enabled')
         ;
