@@ -28,6 +28,7 @@ class NewsTypeAdmin extends Admin
     {
         $listMapper
             ->add('id')
+            ->add('parent')
             ->add('name')
             ->add('_action', 'actions', array(
                 'actions' => array(
@@ -45,8 +46,8 @@ class NewsTypeAdmin extends Admin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            //->add('id')
             ->add('name')
+            ->add('parent')
         ;
     }
 

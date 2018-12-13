@@ -21,6 +21,12 @@ class NewsType
      */
     private $id;
 
+    /** 
+     * @ORM\ManyToOne(targetEntity="NewsType", inversedBy="children")
+     * @ORM\JoinColumn(referencedColumnName="id", onDelete="CASCADE")
+     */
+    private $parent;
+
     /**
      * @var string
      *
@@ -38,6 +44,16 @@ class NewsType
     {
         return $this->id;
     }
+
+    public function setParent(NewsType $parent = null)
+    {   
+        $this->parent = $parent;
+    }   
+
+    public function getParent()
+    {   
+        return $this->parent;
+    }  
 
     /**
      * Set name
@@ -66,6 +82,5 @@ class NewsType
     {
         return (string)$this->getName();
     }
-
 
 }
