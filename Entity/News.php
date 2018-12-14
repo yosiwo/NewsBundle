@@ -5,6 +5,7 @@ namespace Lowtech\NewsBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 
 /**
  * News
@@ -230,7 +231,13 @@ class News
     {
         // the absolute directory path where uploaded
         // documents should be saved
-        return realpath($this->kernel->getRootDir().'/../web/'.$this->getUploadDir());
+        $path = $this->kernel->getRootDir().'/../web/'.$this->getUploadDir();
+        $real_path = realpath($path);
+        if(!$real_path) {
+            throw new FileNotFoundException(sprintf("Upload directory \"%s\" not found.", $path));
+        }
+
+        return $real_path;
     }
 
     protected function getUploadDir()
