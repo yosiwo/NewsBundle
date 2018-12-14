@@ -11,3 +11,10 @@ services:
         arguments: [~, Lowtech\NewsBundle\Entity\NewsType, SonataAdminBundle:CRUD]
         tags:
             - {name: sonata.admin, manager_type: orm, group: admin, label: NewsType}
+
+    lowtech_news_entity.news_listener:
+        class: Lowtech\NewsBundle\Listener\NewsEntityListener
+        arguments:
+            - '@kernel'
+        tags:
+            - { name: doctrine.event_listener, event: postLoad}
