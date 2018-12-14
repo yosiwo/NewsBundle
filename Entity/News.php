@@ -271,7 +271,9 @@ class News
      */
     public function removeUpload()
     {
-        if ($file = $this->getAbsolutePath()) {
+        $file = $this->getAbsolutePath();
+
+        if ($file && file_exists($file)) {
             unlink($file);
         }
     }
