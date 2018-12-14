@@ -64,7 +64,8 @@ class NewsAdmin extends Admin
         $fileFieldOptions = array('required' => false);
         if ($news && ($webPath = $news->getWebPath())) {
             $container = $this->getConfigurationPool()->getContainer();
-            $fullPath = $container->get('request')->getBasePath().'/'.$webPath;
+            $request = $container->get('request_stack')->getCurrentRequest();
+            $fullPath = sprintf('%s://%s/%s/%s', $request->getScheme(), $request->getHost(), $request->getBasePath(), $webPath);
 
             $fileFieldOptions['help'] = '<img src="'.$fullPath.'" class="admin-preview" width="200px" />';
         }
@@ -97,21 +98,24 @@ class NewsAdmin extends Admin
         ;
     }
 
-    public function prePersist($image)
+    public function prePersist($news)
     {
-        $this->manageFileUpload($image);
+        $container = $this->getConfigurationPool()->getContainer();
+        $kernel = $container->get('kernel');
+        $news->setKernel($kernel);
+        $this->manageFileUpload($news);
     }
 
-    public function preUpdate($image)
+    public function preUpdate($news)
     {
-        $this->manageFileUpload($image);
+        $this->manageFileUpload($news);
     }
 
-    private function manageFileUpload($image)
+    private function manageFileUpload($news)
     {
-        if ($image->getFile()) {
-            //$image->refreshUpdated();
-            $image->preUpdate();
+        if ($news->getFile()) {
+            //$news->refreshUpdated();
+            $news->preUpdate();
         }
     }
 

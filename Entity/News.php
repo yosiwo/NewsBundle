@@ -230,7 +230,7 @@ class News
     {
         // the absolute directory path where uploaded
         // documents should be saved
-        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+        return realpath($this->kernel->getRootDir().'/../web/'.$this->getUploadDir());
     }
 
     protected function getUploadDir()
@@ -433,5 +433,10 @@ class News
     public function getRecommended()
     {
         return $this->recommended;
+    }
+
+    public function setKernel($kernel)
+    {
+        $this->kernel = $kernel;
     }
 }
