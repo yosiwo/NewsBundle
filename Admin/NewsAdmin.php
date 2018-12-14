@@ -100,9 +100,6 @@ class NewsAdmin extends Admin
 
     public function prePersist($news)
     {
-        $container = $this->getConfigurationPool()->getContainer();
-        $kernel = $container->get('kernel');
-        $news->setKernel($kernel);
         $this->manageFileUpload($news);
     }
 
@@ -113,6 +110,10 @@ class NewsAdmin extends Admin
 
     private function manageFileUpload($news)
     {
+        $container = $this->getConfigurationPool()->getContainer();
+        $kernel = $container->get('kernel');
+        $news->setKernel($kernel);
+
         if ($news->getFile()) {
             //$news->refreshUpdated();
             $news->preUpdate();
